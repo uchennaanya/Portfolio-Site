@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.active {
+  border-bottom: 2px solid #dcf2b0;
 }
 
 #navbar {
@@ -60,6 +65,30 @@ h2 {
   font-size: 5rem;
   font-weight: 900;
   -webkit-text-fill-color: transparent;
+}
+
+/*  */
+
+.show {
+  display: block;
+  z-index: 2 !important;
+  background: #f7f7f7;
+  width: 100vw;
+  padding: 1rem;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+}
+
+.show li {
+  margin: 2vh 0;
+  z-index: 999999 !important;
+  list-style: none;
+}
+
+.hide {
+  display: none;
+  transition: 4s;
 }
 
 .arrow {
@@ -165,11 +194,12 @@ h2:nth-of-type(4) {
   height: 100vh;
   padding: 1vh 1rem;
   z-index: 1;
+  background: linear-gradient(#f1f1f1, #fff, #ffffff);
 }
 
 .portfolio {
   height: auto;
-  background: #cbdaab;
+  background: linear-gradient(#fbfcf9, #ced1ef, #d2c0c0, #d2d3e2);
 }
 
 .abt_img {
@@ -207,9 +237,6 @@ h2:nth-of-type(4) {
 
 .project .description > p {
   margin: 2rem 0;
-}
-
-.built-with {
 }
 
 .built-with a {
@@ -256,14 +283,14 @@ small:hover {
   margin: 0 0 4vh 0;
 }
 .title::before {
-  content: "------";
+  content: "------ ";
 }
 .profesco {
   background: url("../img/profesco.png") no-repeat;
   width: 100%;
   background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
+  height: 33vh;
+  padding: 3rem 1rem 1rem 1rem;
   box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
@@ -363,9 +390,6 @@ small:hover {
   position: relative;
 }
 
-.project img {
-}
-
 .socials i {
   line-height: 2rem;
   letter-spacing: 0.1rem;
@@ -401,8 +425,8 @@ textarea {
 footer {
   text-align: center;
   padding: 1.3rem 0;
-  color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+  color: #000;
+  background: #f1f1f1;
   margin-top: 100px;
 }
 address a {
@@ -418,6 +442,19 @@ address a {
     text-decoration: none;
     color: #fff;
     transition: all 0.5s ease;
+  }
+
+  .show {
+    display: inline;
+    z-index: 1;
+    background: none;
+    width: auto;
+    padding: 0;
+    position: static;
+  }
+
+  .show li {
+    display: inline-block !important;
   }
 
   .project .description p {
@@ -439,8 +476,12 @@ address a {
     transform: scale(1.1);
     color: #ccc;
   }
-  #navbar {
+
+  #ul {
+    transition: all 0.5s ease-in;
+    border-bottom: 2px solid #dcf2b0;
   }
+
   .fa-bars {
     display: none !important;
   }
