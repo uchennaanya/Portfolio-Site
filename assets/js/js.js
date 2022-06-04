@@ -9,12 +9,14 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "60px";
     document.getElementById("navbar").style.backgroundColor =
       "rgba(0, 0, 0, 0.8)";
+
   } else {
     document.getElementById("navbar").style.padding = "1rem 4rem 0 0";
     document.getElementById("logo").style.width = "200px";
     document.getElementById("logo").style.height = "60px";
     document.getElementById("navbar").style.backgroundColor =
       "rgba(0, 0, 0, 0)";
+
   }
 }
 
@@ -25,15 +27,12 @@ toggle.addEventListener("click", () => {
   if(show.classList.contains("hide")) {
       show.classList.remove("hide")
       show.classList.add("show")
-      // console.log("Hey I was clicked!")
 
   } else {
       show.classList.add("hide")
       show.classList.remove("show")
-      console.log("Hey I was clicked!")
 
   }
-  // console.log("Hey I was clicked!")
 
 })
 
