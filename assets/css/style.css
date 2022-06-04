@@ -7,7 +7,7 @@
 }
 
 .active {
-  border-bottom: 2px solid #dcf2b0;
+  border-bottom: none;
 }
 
 #navbar {
@@ -28,6 +28,16 @@
 .fa-bars {
   color: #fff;
   font-size: 2rem;
+}
+
+ul,
+li,
+a {
+  display: block;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar ul,
@@ -72,23 +82,24 @@ h2 {
 .show {
   display: block;
   z-index: 2 !important;
-  background: #f7f7f7;
+  background: rgba(0, 0, 0, 0.7);
   width: 100vw;
   padding: 1rem;
   position: absolute;
-  top: 10vh;
+  top: 9vh;
   left: 0;
 }
 
 .show li {
   margin: 2vh 0;
+  display: block !important;
+  border-bottom: 1px solid #ccc;
   z-index: 999999 !important;
   list-style: none;
 }
 
-.hide {
+.hide li {
   display: none;
-  transition: 4s;
 }
 
 .arrow {
@@ -215,6 +226,7 @@ h2:nth-of-type(4) {
   transform: rotate(10deg);
   overflow: hidden;
   margin-bottom: 5vh;
+  transition: all 0.4s ease;
 }
 
 .abt_img p {
@@ -434,18 +446,11 @@ address a {
 }
 
 @media only screen and (min-width: 768px) {
-  ul,
-  li,
-  a {
-    display: inline-block;
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.5s ease;
+  .active {
+    border-bottom: 2px solid #dcf2b0;
   }
-
   .show {
-    display: inline;
+    display: inline-block;
     z-index: 1;
     background: none;
     width: auto;
@@ -455,6 +460,16 @@ address a {
 
   .show li {
     display: inline-block !important;
+    border-bottom: none;
+    padding: 0 0.5rem;
+  }
+
+  .hide li {
+    display: inline-block !important;
+  }
+
+  .show li:hover {
+    transform: scale(1.4);
   }
 
   .project .description p {
@@ -470,32 +485,17 @@ address a {
     padding: 2rem 1rem 1rem 1rem;
   }
 
-  ul,
-  li,
-  a:hover {
-    transform: scale(1.1);
-    color: #ccc;
-  }
-
-  #ul {
-    transition: all 0.5s ease-in;
-    border-bottom: 2px solid #dcf2b0;
-  }
-
   .fa-bars {
     display: none !important;
-  }
-
-  .fa-home {
-    padding: 0.3rem;
-    color: #ccc;
   }
 
   .abt_description {
     display: inline-block;
     width: 50%;
     padding: 2rem;
-    overflow: scroll;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    overflow: auto;
   }
 
   .abt_img {
@@ -550,10 +550,6 @@ address a {
     display: inline-block;
   }
 
-  .contact .socials h3 {
-    margin-bottom: 40px;
-    text-decoration: underline;
-  }
   .contact .form {
     display: inline-block;
     width: 50%;
@@ -569,6 +565,12 @@ address a {
   .contact input[type="submit"] {
     width: auto;
     margin: 1rem 0 0 0;
-    border: none;
+    padding: 1rem 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .contact input[type="submit"]:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 }
