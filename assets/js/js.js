@@ -21,16 +21,16 @@ function scrollFunction() {
 }
 
 let toggle = document.getElementById("toggle")
-let show = document.getElementById("show")
+let show = document.getElementById("ul")
 
 toggle.addEventListener("click", () => {
-  if(show.classList.contains("hide")) {
-      show.classList.remove("hide")
-      show.classList.add("show")
+  if(show.classList.contains("show")) {
+      show.classList.remove("show")
+      show.classList.add("hide")
 
   } else {
-      show.classList.add("hide")
-      show.classList.remove("show")
+      show.classList.add("show")
+      show.classList.remove("hide")
 
   }
 
