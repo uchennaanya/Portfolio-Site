@@ -87,7 +87,7 @@ h2 {
   padding: 1rem;
   position: absolute;
   top: 9vh;
-  left: 0;
+  right: 0;
 }
 
 .show li {
