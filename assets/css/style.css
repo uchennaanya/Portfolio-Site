@@ -180,7 +180,7 @@ h2:nth-of-type(2) {
 }
 
 h2:nth-of-type(3) {
-  --dist: 100%;
+  --dist: 10%;
   --deg: -5deg;
   --ease: cubic-bezier(0.25, 1, 0.5, 1);
   color: #fbacbe;
@@ -188,11 +188,12 @@ h2:nth-of-type(3) {
 }
 
 h2:nth-of-type(4) {
+  --dist: 30%;
   --scale: 1.9;
   --deg: 15deg;
   --ease: cubic-bezier(0.7, 0, 0.84, 0);
   color: #dcf2b0;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 .contact,
@@ -501,11 +502,11 @@ address a {
   .abt_img {
     height: 50vh;
     width: 23vw;
+    transition: all 0.5s ease;
   }
 
   .abt_img:hover {
     transform: rotate(0deg);
-    transition: 1s;
     transform: scale(1.1);
   }
 
