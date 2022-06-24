@@ -2,7 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 100% "Lato", sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -16,7 +19,7 @@
   position: fixed;
   align-items: center;
   width: 100%;
-  padding: 1rem 4rem 0 0;
+  padding-right: 3rem;
   z-index: 2;
 }
 
@@ -34,19 +37,17 @@ ul,
 li,
 a {
   display: block;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   text-decoration: none;
   color: #fff;
   transition: all 0.4s ease-in-out;
 }
 
-.navbar ul,
-li {
+.navbar ul {
   display: none;
 }
 
 .home {
-  overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
     url("https://images.unsplash.com/photo-1539035104074-dee66086b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=2550&q=80")
       no-repeat center;
@@ -54,16 +55,12 @@ li {
   display: flex;
   width: 100%;
   justify-content: center;
-  height: 100vh;
+  height: 700px;
   align-items: center;
   flex-direction: column;
   color: #fff;
   text-align: center;
-}
-
-.home h1,
-h2 {
-  color: #fff;
+  overflow: hidden;
 }
 
 .home h1 {
@@ -77,8 +74,6 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-/*  */
-
 .show {
   display: block;
   z-index: 2 !important;
@@ -86,7 +81,7 @@ h2 {
   width: 100vw;
   padding: 1rem;
   position: absolute;
-  top: 9vh;
+  top: 10.5vh;
   right: 0;
 }
 
@@ -265,16 +260,6 @@ h2:nth-of-type(4) {
   transform: scale(1.1);
 }
 
-.documentation {
-  background: url("../img/documentation.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 23vh;
-  padding: 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-}
-
 .built-with a:visited {
   transition: all 0.5s ease-in-out;
 }
@@ -298,109 +283,103 @@ small:hover {
 .title::before {
   content: "------ ";
 }
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+}
+.overlay:hover {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.overlay a {
+  background: #ccc;
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-transform: lowercase;
+}
+
+.project_pics {
+  width: 100%;
+  height: 40vh;
+  padding: 5rem 1rem 1rem 1rem;
+  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.5);
+}
 .profesco {
   background: url("../img/profesco.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
   height: 33vh;
-  padding: 3rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .newsweek {
   background: url("../img/newsweek.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .mrsoft1 {
   background: url("../img/mrsoftfull.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .dashboard1 {
   background: url("../img/tododashboard.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .nonso {
   background: url("../img/nonso.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .UchennaTUT {
   background: url("../img/capstone.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .niiflicks {
   background: url("../img/niiflicks.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 22vh;
-  padding: 2rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .mrsoft2 {
   background: url("../img/mrsoft2.png") no-repeat;
-  width: 100%;
+  background-size: cover;
+}
+
+.documentation {
+  background: url("../img/documentation.png") no-repeat;
   background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  height: 24vh;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .contacts {
   background: url("../img/contacts.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .rest {
   background: url("../img/rest.png") no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 40vh;
-  padding: 5rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 9px 0.5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background-size: cover;
 }
 
 .mobilepics img {
   width: 20%;
   position: relative;
+  transition: all 0.6s ease;
+}
+
+.mobilepics img:hover {
+  transform: scale(1.2);
 }
 
 .socials i {
@@ -449,6 +428,7 @@ address a {
 @media only screen and (min-width: 768px) {
   .active {
     border-bottom: 2px solid #dcf2b0;
+    transform: scale(1.3);
   }
   .show {
     display: inline-block;
@@ -460,30 +440,38 @@ address a {
   }
 
   .show li {
+    margin: 1rem;
     display: inline-block !important;
     border-bottom: none;
-    padding: 0 0.5rem;
   }
 
   .hide li {
     display: inline-block !important;
   }
 
-  .show li:hover {
+  li:hover {
     transform: scale(1.4);
+  }
+  .project_pics {
+    padding: 2rem 1rem 1rem 1rem;
   }
 
   .project .description p {
     margin: 0.5rem 0;
   }
+
+  .overlay {
+    right: 0;
+    top: 0;
+    width: 51%;
+    height: 100%;
+  }
   .documentation {
-    padding: 2rem 1rem 1rem 1rem;
     height: 30vh;
   }
 
   .niiflicks {
     height: 28vh;
-    padding: 2rem 1rem 1rem 1rem;
   }
 
   .fa-bars {
@@ -561,17 +549,5 @@ address a {
     border: 0.5px solid;
     padding: 0.5rem;
     width: 100%;
-  }
-
-  .contact input[type="submit"] {
-    width: auto;
-    margin: 1rem 0 0 0;
-    padding: 1rem 2rem;
-    transition: all 0.4s ease-in-out;
-  }
-
-  .contact input[type="submit"]:hover {
-    transform: scale(1.1);
-    cursor: pointer;
   }
 }
