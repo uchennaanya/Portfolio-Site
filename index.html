@@ -8,17 +8,21 @@
       name="keyword"
       content="Uchenna Anya, portfolio site, front-end web developer, web developer, front-end, web sites"
     />
-    <script src="./assets/js/js.js" defer></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/cover-removebg-preview.png"
+    />
+
+    <script src="./assets/js/js.js" defer></script>
     <script
       src="https://kit.fontawesome.com/62b789e43d.js"
       crossorigin="anonymous"
     ></script>
 
-
-
     <title>Uchenna Anya</title>
-    <link rel="icon" type="image/x-icon" href="/assets/img/cover-removebg-preview.png">
   </head>
   <body>
     <header id="navbar" class="navheader">
@@ -30,7 +34,7 @@
         />
       </a>
       <nav class="" id="show">
-        <ul id="ul" class=" hide">
+        <ul id="ul" class="hide">
           <li>
             <a href="#" class="link"><i class="fas fa-home"></i></a>
           </li>
@@ -41,7 +45,7 @@
             <a href="#portfolio" class="link">Projects</a>
           </li>
           <li>
-            <a href="https://uchennaanya.hashnode.dev/" target="_blank" class="link">Blog</a>
+            <a href="https://uchennaanya.hashnode.dev/" target="_blank">Blog</a>
           </li>
           <li>
             <a href="#contact" class="link">Contact</a>
@@ -56,7 +60,7 @@
       <h2>Uchenna Anya</h2>
       <h2>I am a web developer &#128512; &#128151;</h2>
       <h3>
-        <a href="#about" class="arrow"><i class="  fa fa-arrow-down"></i></a>
+        <a href="#about" class="arrow"><i class="fa fa-angles-down"></i></a>
       </h3>
     </header>
 
@@ -65,12 +69,19 @@
         <h1 class="title">About Me</h1>
 
         <div class="wrapper">
-          <div class="abt_img" data-cue="zoomIn" data-interval="700">
+          <div
+            class="abt_img"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>Uchhenna Martins Anya</p>
           </div>
           <article
             class="abt_description"
-            data-wow-delay="1s"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             I am a world class web developer, with years of experience working
             on web apps, I am open for collaboration and partnership, if you
@@ -89,7 +100,12 @@
       <section class="portfolio" id="portfolio">
         <h1 class="title">Recent Projects</h1>
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               UchennaTUT is my capstone project during my training with
               Microverse a remote software developement school based in USA, you
@@ -110,21 +126,36 @@
                 ></span
               >
             </p>
-        </div>
-
-        <div class="project_pics UchennaTUT" data-cue="slideInUp">
-          <div class="overlay">
-            <a href="#" title="View Page">VIEW PAGE</a>
           </div>
 
-          <div class="mobilepics" data-text="Profesco is a proposed educational project...">
-            <img src="./assets/img/capstonemobile.png" alt="Mobile pic" />
+          <div
+            class="project_pics UchennaTUT"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <div class="overlay">
+              <a href="#" title="View Page">
+                <i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
+            </div>
+
+            <div
+              class="mobilepics"
+              data-text="Profesco is a proposed educational project..."
+            >
+              <img src="./assets/img/capstonemobile.png" alt="Mobile pic" />
+            </div>
           </div>
         </div>
-      </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>Profesco is a proposed educational project...</p>
             <p>
               <span class="built-with">
@@ -140,19 +171,35 @@
               >
             </p>
           </div>
-          <div class="profesco project_pics" data-cue="slideInUp" data-interval="700">
+          <div
+            class="profesco project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/profescomob.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
-            <p>This is second iteration of the proposed website for my current company which is what we are currently using with few modification to suit the business need</p>
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <p>
+              This is second iteration of the proposed website for my current
+              company which is what we are currently using with few modification
+              to suit the business need
+            </p>
             <p>
               <span class="built-with">
                 <small>Built with</small> <small>HTML5</small><small>CSS</small
@@ -168,19 +215,33 @@
             </p>
           </div>
 
-          <div class="mrsoft1 project_pics" data-cue="slideInUp" data-interval="700">
+          <div
+            class="mrsoft1 project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/mrsoftmobile.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
-            <p>This is a minimalistic dashboard I built for practice and learning</p>
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <p>
+              This is a minimalistic dashboard I built for practice and learning
+            </p>
             <p>
               <span class="built-with">
                 <small>Built with</small> <small>HTML5</small><small>CSS</small
@@ -191,15 +252,27 @@
               >
             </p>
           </div>
-          <div class="dashboard1 project_pics" data-cue="slideInUp">
+          <div
+            class="dashboard1 project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               NonsoKitchen is a propsed site for an outdoor catering services,
               it is on of the project I made during HNG internship
@@ -219,18 +292,30 @@
             </p>
           </div>
 
-          <div class="nonso project_pics" data-cue="slideInUp">
+          <div
+            class="nonso project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/nonsomobile.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>This project is a Demosite built for my current company</p>
             <p>
               <span class="built-with">
@@ -248,18 +333,30 @@
             </p>
           </div>
 
-          <div class="mrsoft2 project_pics" data-cue="slideInUp">
+          <div
+            class="mrsoft2 project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/mrsoft2mobile.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               Niiflicks is a landing page I built for an entertainment company
               used for redirecting their potential customers
@@ -279,18 +376,30 @@
             </p>
           </div>
 
-          <div class="niiflicks project_pics" data-cue="slideInUp">
+          <div
+            class="niiflicks project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/niiflicksmobile.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               Newsweek is a clone of the Newsweek official website built it
               collaborating with a coding partner during my days in Microverse.
@@ -299,7 +408,7 @@
               <span class="built-with">
                 <small>Built with</small> <small>HTML5</small><small>CSS</small
                 ><small>JavaScript</small>
-                <a href=https://newsweek2.netlify.app/" target="_blank"
+                <a href="https://newsweek2.netlify.app/" target="_blank"
                   >Live Project</a
                 ><a
                   href="https://github.com/uchennaanya/newsweekclone"
@@ -310,18 +419,30 @@
             </p>
           </div>
 
-          <div class="newsweek project_pics" data-cue="slideInUp">
+          <div
+            class="newsweek project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/newsweekmobile.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               Rest is one of the project I contributed to during HNG7 internship
             </p>
@@ -340,18 +461,30 @@
             </p>
           </div>
 
-          <div class="rest project_pics" data-cue="slideInUp">
+          <div
+            class="rest project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/restmobile.png" alt="Mobile pic" />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               This project is one of the projects I built HNG7 to document some
               of the projects I built during the internship.
@@ -371,9 +504,16 @@
             </p>
           </div>
 
-          <div class="documentation project_pics" data-cue="slideInUp">
+          <div
+            class="documentation project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img
@@ -383,9 +523,14 @@
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="project">
-          <div class="description" data-cue="slideIn">
+          <div
+            class="description"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p class="first-word">
               Contact is a text project I made when I was learning ReactJs, I
               consumed a free API(https://randomuser.me/api/?results=4)
@@ -405,9 +550,16 @@
             </p>
           </div>
 
-          <div class="contacts project_pics" data-cue="slideInUp">
+          <div
+            class="contacts project_pics"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="overlay">
-              <a href="#" title="View Page">VIEW PAGE</a>
+              <a href="#" title="View Page"
+                ><i class="fa fa-arrow-left"></i>&nbsp;VIEW PAGE</a
+              >
             </div>
             <div class="mobilepics">
               <img src="./assets/img/contactsmobile.png" alt="Mobile pic" />
@@ -420,7 +572,12 @@
       <section class="contact" id="contact">
         <h1 class="title">Let's talk</h1>
         <div class="wrapper">
-          <address class="socials">
+          <address
+            class="socials"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               <a href="https://twitter.com/martinsanya19"
                 ><i class="fa fa-twitter"></i>@martinsanya19</a
@@ -443,7 +600,13 @@
             </p>
           </address>
 
-          <form action="" class="form">
+          <form
+            action=""
+            class="form"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <label for="name">Name</label>
             <input
               type="text"
@@ -469,10 +632,11 @@
         </div>
       </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/assets/js/scrollCue-2.0.0/scrollCue.js"></script>
-    <script>scrollCue.init();</script>
 
     <footer>&copy; Uchenna 2022</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
