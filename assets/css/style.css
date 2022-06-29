@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 100% "Lato", sans-serif;
+  font-family: "Fira Code", monospace;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
   position: fixed;
   align-items: center;
   width: 100%;
-  padding-right: 3rem;
+  padding: 3rem 3rem 0 0;
   z-index: 2;
 }
 
@@ -47,31 +47,84 @@ a {
   display: none;
 }
 
-.home {
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-    url("https://images.unsplash.com/photo-1539035104074-dee66086b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=2550&q=80")
-      no-repeat center;
-  background-size: cover;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  height: 700px;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
+.play-btn {
+  animation: pulse_01 2s ease infinite;
+  padding: 0.2rem 2rem;
+  border-radius: 20px;
 }
 
-.home h1 {
-  background: url("../img/profilepic.jpg") no-repeat bottom;
-  background-clip: text;
-  background-size: cover;
-  -webkit-background-clip: text;
-  background-attachment: fixed;
-  font-size: 5rem;
-  font-weight: 900;
-  -webkit-text-fill-color: transparent;
+@keyframes pulse_01 {
+  0% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(22, 20, 20, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.arrow {
+  animation: MoveUpDown 1s linear infinite alternate;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  25% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  75% {
+    bottom: 75px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  padding-top: 5rem;
+  align-items: center;
+  width: 100%;
+  padding: 0 3rem;
+  justify-content: space-between;
+}
+
+.dark a {
+  color: #000;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 90px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.home {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 1);
+  background-size: contain;
+  display: flex;
+  height: 100vh;
+  padding-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 .show {
@@ -97,128 +150,30 @@ a {
   display: none;
 }
 
-.arrow {
-  animation: MoveUpDown 1s linear infinite alternate;
-  position: absolute;
-  bottom: 0;
-  font-size: 2rem;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  25% {
-    bottom: 50px;
-  }
-  50% {
-    bottom: 50px;
-  }
-  75% {
-    bottom: 75px;
-  }
-  100% {
-    bottom: 100px;
-  }
-}
-:root {
-  --dist: 0%;
-  --scale: 2;
-  --deg: 10deg;
-  --delay: 0s;
-  --ease: linear;
-  --dur: 2s;
-}
-
-h2 {
-  animation: moveIn var(--dur) var(--delay) var(--ease) both;
-  margin: 0.75rem 0;
-}
-
-@keyframes moveIn {
-  0% {
-    transform: translateX(-325) scale(1) rotate(0deg);
-  }
-  100% {
-    transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
-  }
-}
-
-h2:nth-of-type(1) {
-  --scale: 1.75;
-  --dist: 80%;
-  --deg: 5deg;
-  --dur: 1.9s;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  color: white;
-  margin-bottom: 2rem;
-}
-
-h2:nth-of-type(2) {
-  --scale: 1.5;
-  --dist: 30%;
-  --dur: 0.5s;
-  --ease: cubic-bezier(0.34, 1.56, 0.64, 1);
-  color: #59c3c3;
-}
-
-h2:nth-of-type(3) {
-  --dist: 10%;
-  --deg: -5deg;
-  --ease: cubic-bezier(0.25, 1, 0.5, 1);
-  color: #fbacbe;
-  font-size: 2.5rem;
-}
-
-h2:nth-of-type(4) {
-  --dist: 30%;
-  --scale: 1.9;
-  --deg: 15deg;
-  --ease: cubic-bezier(0.7, 0, 0.84, 0);
-  color: #dcf2b0;
-  margin-top: 5rem;
-}
-
-.contact,
-.about,
 .portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
-  padding: 1vh 1rem;
+  padding: 10rem 1vh 1rem;
   z-index: 1;
-  background: linear-gradient(#f1f1f1, #fff, #ffffff);
-}
-
-.portfolio {
-  height: auto;
   background: linear-gradient(#fbfcf9, #ced1ef, #d2c0c0, #d2d3e2);
 }
 
 .abt_img {
   background: url("../img/profilepic.jpg") no-repeat center;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   object-fit: cover;
-  border-radius: 4px;
   height: 50vh;
   width: 75vw;
   color: #fff;
+  display: none;
   position: relative;
   left: 30px;
-  transform: rotate(10deg);
+  transform: rotate(20deg);
   overflow: hidden;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
   margin-bottom: 5vh;
   transition: all 0.4s ease;
-}
-
-.abt_img p {
-  padding: 5rem 0 0 1rem;
-  writing-mode: vertical-rl;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .project {
@@ -279,7 +234,7 @@ small:hover {
   opacity: 0;
   right: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   bottom: 0;
 }
 .overlay:hover {
@@ -364,10 +319,6 @@ small:hover {
   transition: all 0.6s ease;
 }
 
-.mobilepics img:hover {
-  transform: scale(1.2);
-}
-
 .socials i {
   line-height: 2rem;
   letter-spacing: 0.1rem;
@@ -375,40 +326,21 @@ small:hover {
   color: #ccc;
 }
 
-.contact .form {
-  margin-top: 50px;
-  overflow-wrap: break-word;
+footer a {
+  display: inline-block;
+  color: #fff;
 }
 
-.form label {
-  display: block;
-  line-height: 2rem;
-}
-
-.form input,
-textarea {
-  display: block;
-  padding: 0.5rem;
-  width: 100%;
-  border: 1px solid;
-  margin-bottom: 10px;
-  caret-color: aqua;
-}
-
-.project .description p::first-letter {
-  color: rgb(94, 94, 141);
-  font-size: 1.5rem;
+footer li {
+  display: inline-block;
 }
 
 footer {
-  text-align: center;
-  padding: 1.3rem 0;
-  color: #000;
-  background: #f1f1f1;
-  margin-top: 100px;
-}
-address a {
-  color: black !important;
+  display: flex;
+  color: #000 !important;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -450,6 +382,7 @@ address a {
     right: 0;
     top: 0;
     width: 100%;
+    z-index: 2;
     height: 100%;
   }
   .documentation {
@@ -476,6 +409,7 @@ address a {
   .abt_img {
     height: 50vh;
     width: 23vw;
+    display: inline;
     transition: all 0.5s ease;
   }
 
@@ -498,42 +432,14 @@ address a {
     padding-right: 1rem;
   }
 
-  .contact,
-  .about,
   .portfolio {
     display: flex;
-    padding: 0 15rem;
-  }
-
-  .portfolio {
-    padding: 7rem 15rem;
+    padding: 11rem 15rem;
   }
 
   hr {
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
     border: 0.1px dotted rebeccapurple;
     margin: 0 15rem;
-  }
-
-  .wrapper {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .contact .socials {
-    display: inline-block;
-  }
-
-  .contact .form {
-    display: inline-block;
-    width: 50%;
-  }
-  .contact .form input,
-  textarea {
-    display: block;
-    border: 0.5px solid;
-    padding: 0.5rem;
-    width: 100%;
   }
 }
