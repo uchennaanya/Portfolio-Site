@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: belligerent
+font link: https://www.fontmonkey.com/archive1.php
+font author: P.D. Magnus
+font author site: https://www.fontmonkey.com/
+Slogan Font: Renner-Thin.otf
+
+icon designer: Arthur Shlain
+icon designer link: /ArtZ91
+        
+{"bg":"transparent","font":"#2e3034","icon":"#488eff","slogan":"#424448"}
+      
