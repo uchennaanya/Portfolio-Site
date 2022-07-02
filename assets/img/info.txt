@@ -10,5 +10,9 @@ Slogan Font: Renner-Thin.otf
 icon designer: Arthur Shlain
 icon designer link: /ArtZ91
         
-{"bg":"transparent","font":"#2e3034","icon":"#488eff","slogan":"#424448"}
+
+fontColor: {"gradient-0":"#488eff","gradient-1":"#D7F9FF"}
+bgColor: {"hex":"transparent"}
+iconColor: {"gradient-0":"#488eff","gradient-1":"#D7F9FF"}
+sloganColor: {"gradient-0":"#2e3034","gradient-1":"#75F3F4"}
       
