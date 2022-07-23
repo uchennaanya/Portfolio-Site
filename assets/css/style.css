@@ -29,7 +29,7 @@ html {
 }
 
 .fa-bars {
-  color: #fff;
+  color: blueviolet;
   font-size: 2rem;
 }
 
@@ -39,7 +39,7 @@ a {
   display: block;
   margin-left: 1rem;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   transition: all 0.4s ease-in-out;
 }
 
@@ -53,6 +53,11 @@ a {
   border-radius: 20px;
 }
 
+.git-link a {
+  color: blue !important;
+  text-decoration: underline black;
+  display: inline;
+}
 @keyframes pulse_01 {
   0% {
     transform: scale(0.94);
@@ -134,7 +139,7 @@ a {
   width: 100vw;
   padding: 1rem;
   position: absolute;
-  top: 10.5vh;
+  top: 15vh;
   right: 0;
 }
 
@@ -205,7 +210,7 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-small {
+.project small {
   margin: 0.5rem 0.5rem 0 0;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -435,6 +440,10 @@ footer {
   .portfolio {
     display: flex;
     padding: 11rem 15rem;
+  }
+
+  .left {
+    margin-right: 2rem;
   }
 
   hr {
